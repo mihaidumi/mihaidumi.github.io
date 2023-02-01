@@ -19,6 +19,7 @@ button {
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    margin: 20px auto;
 }
 #input-option1, #input-option2 {
     height: 50px;
