@@ -41,40 +41,7 @@
     
     
     
-    /*const form = document.getElementById("form")
-    let option1 = document.getElementById("option1").value;
-    let option2 = document.getElementById("option2").value;
-    let displayOption1 = document.getElementById("option-1")
     
-
-    
-    
-
-    function fight() {
-        displayOption1.innerText = "hello" 
-        console.log(displayOption1)       
-    }
-    
-    
-      /*
-      form.addEventListener('submit', (e) => {
-            e.preventDefault();
-    
-            if(option1 === option2) {
-                document.getElementById("result").innerHTML="Tie game"
-            }else if(option1 === "rock" && option2 === "paper") {
-                document.getElementById("result").innerHTML="option 2 wins"
-            }else if(option1 === "paper" && option2 === "scissors" ){
-                document.getElementById("result").innerHTML="option 2 wins"
-            }else if(option1 === "scissors" && option2 === "rock"){
-                document.getElementById("result").innerHTML="option 2 wins"
-            }else{
-                document.getElementById("result").innerHTML="option 1 wins";
-            }
-        })
-      
-      
-      */      
              
              
              
