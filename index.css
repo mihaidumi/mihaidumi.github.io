@@ -15,28 +15,14 @@ button {
     border-radius: 5px;
     transition: 100ms;
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    width: 100%;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;    
-    margin: 30px auto;
-}
-    
-#input-option1 {
-    margin-bottom: 2rem;
 
-}
 #increment-btn {
-    background: darkred; 
-    margin-top: 2rem;   
+    background: darkred;    
 }
 
 .increment-btn:hover{
    transform: scale(1.1);
+
 }
 
 .result {
@@ -46,4 +32,3 @@ button {
 .error {
     color: red;
 } 
-
