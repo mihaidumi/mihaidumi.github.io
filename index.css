@@ -15,6 +15,15 @@ button {
     border-radius: 5px;
     transition: 100ms;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+#input-option1, #input-option2 {
+    height: 50px;
+    margin: 1.5em;
+}
 
 #increment-btn {
     background: darkred;    
