@@ -22,7 +22,8 @@ button {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 600px;
+    height: 80vh;
     margin: 20px auto;
     border: 5px solid #ffcc5c;
 
