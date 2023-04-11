@@ -15,6 +15,9 @@ body {
 .list{
     color: black;
 }
+.btn {
+    display: flex;
+}
 
 .clear-list:hover, .add-item:hover{
     -webkit-transition-duration: 0.4s;
@@ -23,28 +26,26 @@ body {
 }
 .add-item {
     cursor: pointer;
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: white;    
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    text-decoration: none;    
     font-size: 16px;
     transition-duration: 0.4s;
-    padding: 10px 24px;
+    padding: 5px 10px;
+    margin: 0 5px;
 }
 .clear-list {
     cursor: pointer;
     background-color:#f44336;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: white;    
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    text-decoration: none;    
     font-size: 16px;
-    padding: 10px 24px;
+    padding: 5px 10px;
+    margin: 0 5px;
 }
 .input-item {
     border-radius: 5px;
@@ -53,9 +54,7 @@ body {
 }
 .error {
     color: red;
-    font-size: 1.2em;
-
-    
+    font-size: 1.2em;    
 }
 .output {
     font-size: 1.5em;;
