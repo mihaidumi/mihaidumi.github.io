@@ -12,6 +12,11 @@ body {
     max-width: 500px;
     border: 1px solid black;
 }
+.title {
+    color: blue;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
 .list{
     color: black;
 }
