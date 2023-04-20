@@ -8,12 +8,7 @@ let error = document.getElementById("error");
 let shoppingItems = [];
 let listItems = "";
 
-
-
-
 addItem.onclick = item;
-
-
 
 function item(e){
     e.preventDefault();
