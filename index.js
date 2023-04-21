@@ -45,14 +45,12 @@ function renderItems(){
          
 }
 
-function removeItem(e){
-    console.log(e.target)
-    
-}
 
-function boughtItem(){
-    listItems.style.textDecoration = "line-through";
-}
+
+
+
+
+
 
 function clearList(){    
     listItems = ""
