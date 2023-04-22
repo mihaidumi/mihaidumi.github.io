@@ -1,20 +1,10 @@
-
-
-
-
 const addItem = document.getElementById("add-item");
 const getItem = document.getElementById("input-item");
 const outputItem = document.getElementById("output");
 let error = document.getElementById("error");
 let shoppingItems = [];
 
-
-
-
-
 addItem.onclick = item;
-
-
 
 function item(e){
     e.preventDefault();
@@ -49,7 +39,6 @@ function renderItems(){
     error.textContent = ""    
     getItem.value = ""          
 }
-
 
 function clearList(){    
     listItems = ""
