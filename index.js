@@ -31,7 +31,12 @@ function renderItems(){
         let listItems = "";          
         for(let i = 0; i < shoppingItems.length; i += 1){        
             listItems += "<li>" + shoppingItems[i] + "<button id='remove-btn' onClick=removeItem()>X</button>" + "</li>"             
-    }         
+    } 
+        let button = document.getElementById("remove-btn")
+        console.log(button)
+        //button.addEventListener("click", removeItem(){
+
+        //})        
         error.textContent = ""              
         outputItem.innerHTML = listItems
         console.log(listItems)          
