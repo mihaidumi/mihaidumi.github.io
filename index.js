@@ -4,7 +4,9 @@ const outputItem = document.getElementById("output");
 let error = document.getElementById("error");
 let shoppingItems = [];
 
+
 addItem.onclick = item;
+
 
 function item(e){
     e.preventDefault();
@@ -13,6 +15,7 @@ function item(e){
     }else{
         shoppingItems.push(getItem.value); 
         renderItems();
+        listItems = "";
     }           
 }
 
@@ -30,30 +33,30 @@ function renderItems(){
         li.appendChild(removeBtn)*/ 
         let listItems = "";          
         for(let i = 0; i < shoppingItems.length; i += 1){        
-            listItems += "<li>" + shoppingItems[i] + "<button id='remove-btn' onClick=removeItem()>X</button>" + "</li>"             
-    } 
-        let button = document.getElementById("remove-btn")
-        console.log(button)
-        //button.addEventListener("click", removeItem(){
-
-        //})        
-        error.textContent = ""              
-        outputItem.innerHTML = listItems
-        console.log(listItems)          
+            listItems += "<li>" + shoppingItems[i] + "<button id='remove-btn' onClick=this.parentElement.remove()>X</button>" + "</li>"             
+        }         
+        
+        error.textContent = "";              
+        outputItem.innerHTML = listItems;
+        console.log(listItems);
+        listItems = "";             
     }
-    error.textContent = ""    
-    getItem.value = ""          
+    error.textContent = "";
+    //outputItem.innerHTML = listItems      
+    getItem.value = "";    
 }
 
-function removeBtn(){
-    console.log("hello")
-}
+/*function removeBtn(){
+    //this.parent.remove
+    this.style.display='none'
+
+}  */ 
 
 function clearList(){    
-    listItems = ""
-    outputItem.innerHTML = ""
-    shoppingItems = []    
-    error.textContent = ""     
+    listItems = "";
+    outputItem.innerHTML = "";
+    shoppingItems = [];    
+    error.textContent = "";     
 }
 
     
