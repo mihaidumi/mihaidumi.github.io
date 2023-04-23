@@ -64,12 +64,23 @@ body {
     font-size: 1.3em;;
 }
 
-.list-item li{
+ul li {
     display: flex;
-    justify-content:space-between;
-    max-width: 400px; 
-       
+    width: 200px;
+    height: 30px;
+    justify-content: space-between;
+    background: #dbaa73;
+    font-size: 23px;
+    margin: 5px 0;
 }
-.remove-btn {
-    margin: 0 0 .5em 3em;
+.check-box{
+    height: 25px;
+    width: 25px;
+    background-color: #f4f136;
+    font-size: 25px;
+}
+
+
+#remove-btn{   
+    margin-left: 20px;       
 }
