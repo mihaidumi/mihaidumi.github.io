@@ -65,22 +65,25 @@ body {
 }
 
 ul li {
-    display: flex;
-    width: 200px;
-    height: 30px;
+    display: flex;       
+    max-width: 300px;
+    max-height: 100px;
     justify-content: space-between;
-    background: #dbaa73;
+    background: #bcd9e4;
     font-size: 20px;
     margin: 5px 0;
 }
 .check-box{
     height: 25px;
-    width: 25px;
-    background-color: #f4f136;
+    width: 25px;   
     font-size: 25px;
+    cursor: pointer;
 }
 
-
-#remove-btn{   
-    margin-left: 20px;       
+#remove-btn{
+    align-items: center;   
+    margin-left: 1.5rem;
+    background-color: #f46236;
+    border: none;
+    cursor: pointer;        
 }
