@@ -45,6 +45,10 @@ function renderItems(){
     getItem.value = ""          
 }
 
+function removeBtn(){
+    console.log("hello")
+}
+
 function clearList(){    
     listItems = ""
     outputItem.innerHTML = ""
