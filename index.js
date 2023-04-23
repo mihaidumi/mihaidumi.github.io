@@ -33,7 +33,7 @@ function renderItems(){
         li.appendChild(removeBtn)*/ 
         let listItems = "";          
         for(let i = 0; i < shoppingItems.length; i += 1){        
-            listItems += "<li>" + shoppingItems[i] + "<button id='remove-btn' onClick=this.parentElement.remove()>X</button>" + "</li>"             
+            listItems += "<li>" + "<input class='check-box' type='checkbox' />"+ shoppingItems[i] + "<button id='remove-btn' onClick=this.parentElement.remove()>X</button>" + "</li>"             
         }         
         
         error.textContent = "";              
@@ -58,6 +58,7 @@ function clearList(){
     shoppingItems = [];    
     error.textContent = "";     
 }
+
 
     
 
