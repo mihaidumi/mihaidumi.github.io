@@ -81,8 +81,7 @@ ul li {
     cursor: pointer;
 }
 
-#remove-btn{
-    order: -1;
+.remove-btn{
     align-items: center;   
     margin-left: 1.5rem;
     background-color: #f46236;
