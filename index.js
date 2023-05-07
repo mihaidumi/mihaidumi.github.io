@@ -35,15 +35,39 @@ function renderItems(){
         let removeBtn = document.createElement("button")
         removeBtn.textContent="X"
         removeBtn.classList.add("remove-btn")
-        li.appendChild(removeBtn)       
+        li.appendChild(removeBtn)
+        
+
+        //console.log(removeBtn);
 
         removeBtn.addEventListener('click', function(){ li.remove() })
-        
+
+        /*let listItems = "";                  
+        for(let i = 0; i < shoppingItems.length; i += 1){                       
+            listItems +=
+             `<li id ="li">
+                <input class='check-box' type='checkbox' /> 
+                ${shoppingItems[i]} 
+                <button id='remove-btn' onclick=removeItem()>X</button>
+            </li>`                              
+       }           
         error.textContent = "";              
         outputItem.innerHTML = listItems;*/                               
     }       
-    error.textContent = "";   
+    error.textContent = "";
+    //outputItem.innerHTML = listItems      
+    //getItem.value = "";    
 }
+
+/*function removeItem(){    
+    //console.log("helo")
+    //let btn = document.getElementById("remove-btn")
+    //let li = document.getElementById("li")
+    //li.remove()    
+    //shoppingItems = []; 
+    //renderItems() 
+    alert(1)  
+}*/
 
 function clearList(){    
     listItems = "";
@@ -51,7 +75,6 @@ function clearList(){
     shoppingItems = [];    
     error.textContent = "";     
 }
-    
 
 
     
