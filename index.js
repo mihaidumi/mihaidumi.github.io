@@ -5,6 +5,7 @@ let error = document.getElementById("error");
 let shoppingItems = [];
 
 
+
 addItem.onclick = item;
 
 
@@ -22,35 +23,27 @@ function item(e){
 function renderItems(){    
     if(!getItem.value){
         return error.textContent = "You must write something."
-    }else{  
-        /*let li = document.createElement("li")
-        li.classList.add("list-item")
-        li.innerHTML =  getItem.value 
+    }else{         
+        let li = document.createElement("li")       
+        li.classList.add("list-item")      
+        li.innerHTML =  getItem.value        
         outputItem.appendChild(li)
+        let input = document.createElement("input");
+        input.setAttribute("type", "checkbox");
+        input.classList.add("check-box")
+        li.appendChild(input)                
         let removeBtn = document.createElement("button")
         removeBtn.textContent="X"
         removeBtn.classList.add("remove-btn")
-        li.appendChild(removeBtn)*/ 
-        let listItems = "";          
-        for(let i = 0; i < shoppingItems.length; i += 1){        
-            listItems += "<li>" + "<input class='check-box' type='checkbox' />"+ shoppingItems[i] + "<button id='remove-btn' onClick=this.parentElement.remove()>X</button>" + "</li>"             
-        }         
+        li.appendChild(removeBtn)       
+
+        removeBtn.addEventListener('click', function(){ li.remove() })
         
         error.textContent = "";              
-        outputItem.innerHTML = listItems;
-        console.log(listItems);
-        listItems = "";             
-    }
-    error.textContent = "";
-    //outputItem.innerHTML = listItems      
-    getItem.value = "";    
+        outputItem.innerHTML = listItems;*/                               
+    }       
+    error.textContent = "";   
 }
-
-/*function removeBtn(){
-    //this.parent.remove
-    this.style.display='none'
-
-}  */ 
 
 function clearList(){    
     listItems = "";
@@ -58,8 +51,6 @@ function clearList(){
     shoppingItems = [];    
     error.textContent = "";     
 }
-
-
     
 
 
