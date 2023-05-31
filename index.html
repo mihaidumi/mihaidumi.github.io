@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Shopping list</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container" id="container">
-        <div class="title" id="title"><b>Grocery List</b></div>
-        <div class="btn" id="btn">
-            <button type="button" class="add-item" id="add-item">Add item</button> 
-            <input type="text" class="input-item" id="input-item" onfocus="this.value=''" maxlength="40"></input> 
-            <button type="button" class="clear-list" id="clear-list" onclick="clearList()">Clear list</button>         
-        </div>        
+        <h1 class="title">Grocery List</h1>
+        <div class="btn" id="btn">            
+            <input type="text" class="input-item" id="input-item" onfocus="this.value=''" maxlength="40"></input>
+            <button type="submit" class="add-item" id="add-item">+</button> 
+            <!--<button type="button" class="clear-list" id="clear-list" onclick="clearList()">Clear list</button>-->                    
+        </div>
+        <!--<button type="button" class="save-list" id="save-list" onclick="saveItems()">Save list</button>-->     
         <ul class="output" id="output"></ul>
         <p class="error" id="error"></p>
     </div>
-    <script src="index.js"></script>
+    <script src="index.js"></script>    
 </body>
 </html>
