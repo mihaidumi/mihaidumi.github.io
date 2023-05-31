@@ -26,7 +26,7 @@ function renderItems(){
     }else{         
         let li = document.createElement("li")       
         li.classList.add("list-item")      
-        li.innerHTML =  getItem.value        
+        li.innerHTML =  getItem.value             
         outputItem.appendChild(li)
         let input = document.createElement("input");
         input.setAttribute("type", "checkbox");
@@ -36,6 +36,9 @@ function renderItems(){
         removeBtn.textContent="X"
         removeBtn.classList.add("remove-btn")
         li.appendChild(removeBtn)
+        console.log(shoppingItems)
+        
+        localStorage.setItem("key", JSON.stringify(shoppingItems))
         
 
         //console.log(removeBtn);
@@ -69,13 +72,19 @@ function renderItems(){
     alert(1)  
 }*/
 
+function saveItems(){      
+    let itemsFromLocalStorage = JSON.parse(localStorage.getItem("key"))
+    if(itemsFromLocalStorage){        
+        renderItems()         
+    }    
+}
+
 function clearList(){    
     listItems = "";
     outputItem.innerHTML = "";
     shoppingItems = [];    
-    error.textContent = "";     
+    error.textContent = ""; 
+    localStorage.removeItem("key")    
 }
-
-
     
 
