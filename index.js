@@ -4,7 +4,10 @@ const outputItem = document.getElementById("output");
 let error = document.getElementById("error");
 let shoppingItems = [];
 
-
+getItem.addEventListener("keydown", function(event){
+    if(event.key=="Enter")
+    renderItems()    
+})
 
 addItem.onclick = item;
 
@@ -39,6 +42,8 @@ function renderItems(){
         console.log(shoppingItems)
         
         localStorage.setItem("key", JSON.stringify(shoppingItems))
+
+        getItem.value=""
         
 
         //console.log(removeBtn);
@@ -86,5 +91,3 @@ function clearList(){
     error.textContent = ""; 
     localStorage.removeItem("key")    
 }
-    
-
