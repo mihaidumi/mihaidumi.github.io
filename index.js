@@ -38,56 +38,21 @@ function renderItems(){
         let removeBtn = document.createElement("button")
         removeBtn.textContent="X"
         removeBtn.classList.add("remove-btn")
-        li.appendChild(removeBtn)
-        console.log(shoppingItems)
+        li.appendChild(removeBtn)       
         
         localStorage.setItem("key", JSON.stringify(shoppingItems))
 
         getItem.value=""
         
 
-        //console.log(removeBtn);
+        
 
-        removeBtn.addEventListener('click', function(){ li.remove() })
-
-        /*let listItems = "";                  
-        for(let i = 0; i < shoppingItems.length; i += 1){                       
-            listItems +=
-             `<li id ="li">
-                <input class='check-box' type='checkbox' /> 
-                ${shoppingItems[i]} 
-                <button id='remove-btn' onclick=removeItem()>X</button>
-            </li>`                              
-       }           
-        error.textContent = "";              
-        outputItem.innerHTML = listItems;*/                               
+        removeBtn.addEventListener('click', function(){ li.remove() })                                       
     }       
     error.textContent = "";
-    //outputItem.innerHTML = listItems      
-    //getItem.value = "";    
+    
 }
 
-/*function removeItem(){    
-    //console.log("helo")
-    //let btn = document.getElementById("remove-btn")
-    //let li = document.getElementById("li")
-    //li.remove()    
-    //shoppingItems = []; 
-    //renderItems() 
-    alert(1)  
-}*/
 
-function saveItems(){      
-    let itemsFromLocalStorage = JSON.parse(localStorage.getItem("key"))
-    if(itemsFromLocalStorage){        
-        renderItems()         
-    }    
-}
 
-function clearList(){    
-    listItems = "";
-    outputItem.innerHTML = "";
-    shoppingItems = [];    
-    error.textContent = ""; 
-    localStorage.removeItem("key")    
-}
+
