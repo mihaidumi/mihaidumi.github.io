@@ -2,24 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Shopping list</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container" id="container">
-        <h1 class="title">Grocery List</h1>
-        <div class="btn" id="btn">            
-            <input type="text" class="input-item" id="input-item" onfocus="this.value=''" maxlength="40"></input>
-            <button type="submit" class="add-item" id="add-item">+</button> 
-            <!--<button type="button" class="clear-list" id="clear-list" onclick="clearList()">Clear list</button>-->                    
-        </div>
-        <!--<button type="button" class="save-list" id="save-list" onclick="saveItems()">Save list</button>-->     
-        <ul class="output" id="output"></ul>
-        <p class="error" id="error"></p>
+    <div class = "container">
+        
+            <button id="myBtn1">Generează numerele câștigătoare!</button> 
+            <!--<button id="myBtn2">Bila nr 2</button>
+            <button id="myBtn3">Bila nr 3</button>
+            <button id="myBtn4">Bila nr 4</button>
+            <button id="myBtn5">Bila nr 5</button>
+            <button id="myBtn6">Bila nr 6</button>--> 
+        
+          
+        <ul>
+            <li id="num1">0</li>
+            <li id="num2">0</li>
+            <li id="num3">0</li>
+            <li id="num4">0</li>
+            <li id="num5">0</li>
+            <li id="num6">0</li>
+        </ul>
+        <button class="reset" onClick="reset()">Resetează</button>        
     </div>
-    <script src="index.js"></script>    
+    
+    
+    
+
+    <script src="index.js"></script>
 </body>
 </html>
